@@ -9,12 +9,8 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-provider "aws" {
-  region  = "us-west-2"
-}
-
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-096ea6a12ea24a797"
   instance_type = "t2.micro"
 
   tags = {
